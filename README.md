@@ -12,3 +12,8 @@ University Management System (three phases):
 - Phase 2: TA application forms, profile pictures, and information channels.
 
 - Phase 3: Web interface (client-server) built on APHTTP.
+
+**Preview** of the web interface of the project (phase 3):
+
+![WEB GIF](web_preview.gif)
+
