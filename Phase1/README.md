@@ -6,6 +6,7 @@
 ## What you can do:
 | 📝 Command Description                                | 🔧 API Command                                                                                          |
 |------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| Login                                                | `POST login ? id <id> password <password>`                                                              |
 | Logout                                               | `POST logout ?`                                                                                         |
 | List of courses presented                            | `GET courses ? id <id>`                                                                                 |
 | Course description                                   | `GET courses ? id <id>`                                                                                 |
