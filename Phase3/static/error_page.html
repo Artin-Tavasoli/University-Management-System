@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: plum;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+        }
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+        #error-message {
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="error-message">[ERROR_MESSAGE]</h1>
+        <button class="back-button" onclick="history.back()">Go Back</button>
+    </div>
+</body>
+</html>

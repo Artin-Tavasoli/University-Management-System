@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add COURSE Page</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      text-align: center;
+      background-image: url('login_bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: violet;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 36px;
+      color: blue;
+      margin-bottom: 20px;
+    }
+    section {
+      background-color: lightblue;
+      padding: 3%;
+      max-width: 700px;
+      border-radius: 3px;
+      margin: auto;
+      transition: background-color 0.3s ease;
+    }
+    section:hover {
+      background-color: lightcoral;
+    }
+    form input[type="text"],
+    form input[type="file"] {
+      display: block;
+      margin: auto;
+      margin-bottom: 20px;
+      padding: 10px;
+      width: 80%;
+      font-size: 18px;
+    }
+    form input[type="submit"] {
+      display: block;
+      width: 80%;
+      padding: 12px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>PLEASE FILL A COURSE ID</h1>
+  <section>
+    <h2>ENTER A COURSE ID</h2>
+    <form action="/delete_course" method="post" enctype="multipart/form-data"> <!-- Added enctype for file upload -->
+      <input name="course_id" type="text" placeholder="COURSE_ID" required> <!-- Added required attribute -->
+      <input type="submit" value="DELETE">
+    </form>
+  </section>
+</body>
+
+</html>
